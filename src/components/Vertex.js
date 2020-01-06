@@ -11,8 +11,17 @@ class Vertex extends React.Component {
             popupData: null,
         };
     }
-    render() {
 
+    getPopupData() {
+        return popupData;
+    }
+
+    render() {
+        return (
+            <button>
+                {this.state.value}
+            </button>
+        );
     }
 }
 

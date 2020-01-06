@@ -10,7 +10,9 @@ class Edge extends React.Component {
     }
 
     render() {
-
+        return (
+        <svg></svg>
+        );
     }
 }
 
