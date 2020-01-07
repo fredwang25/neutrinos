@@ -6,13 +6,14 @@ For dev information and deploying, please visit the [wiki](https://github.com/di
 
 ## Setup 
 
-First thing: fork this repo and then clone onto your computer.
+First thing: fork this repository and then clone onto your computer.
 
-`cd` into the cloned repository and add `dinganthony`'s fork as upstream:
+Navigate into the `neutrinos` directory and add `dinganthony`'s repo as upstream:
 ```
+cd neutrinos
 git remote add upstream https://github.com/dinganthony/neutrinos.git
 ```
-Please do not push to `dinganthony/master`, but you can pull to stay in sync of changes(through `git pull upstream master`).
+Please do not push to `dinganthony/neutrinos`, but you can pull to stay in sync of changes (through `git pull upstream master`).
 
 Then, make sure you have Node.js and `npm` downloaded:
 ```
@@ -21,9 +22,8 @@ npm -v
 ```
 If not, you can find them online.
 
-After, navigate into the `neutrinos` directory and install dependencies:
+After, you can install core dependencies:
 ```
-cd neutrinos
 npm install
 ```
 which will install the required dependencies in the `/node_modules` folder. *DO NOT COMMIT THIS*: it should be in the `.gitignore`.
@@ -32,6 +32,8 @@ We will be using [D3.js](https://d3js.org) for force chart logic and visualizati
 ```
 npm install d3-force
 ```
+
+## Development
 
 To create a dev instance, run 
 ```
